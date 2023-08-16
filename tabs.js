@@ -19,6 +19,23 @@ darkMode.addEventListener('click', () => {
 })
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    var expandTrigger = document.getElementById("expandTrigger");
+    var hiddenContent = document.querySelector(".hidden-content");
+    var arrow = expandTrigger.querySelector(".arrow");
+
+    expandTrigger.addEventListener("click", function() {
+        if (hiddenContent.style.maxHeight) {
+            hiddenContent.style.maxHeight = null;
+            arrow.textContent = "▼";
+        } else {
+            hiddenContent.style.maxHeight = hiddenContent.scrollHeight + "px";
+            arrow.textContent = "▲";
+        }
+    });
+});
+
+
 Orders.forEach(order => {
     const tr = document.createElement('tr');
     const trContent = `
@@ -48,3 +65,7 @@ function updateDarkMode() {
 }
 
 updateDarkMode(); // Apply dark mode on page load
+
+
+
+

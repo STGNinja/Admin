@@ -56,6 +56,16 @@ body{
     background-color: var(--color-background);
 }
 
+
+.hidden-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+
+
+
 .download{
 font-size: 2rem;
 }
