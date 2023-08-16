@@ -392,64 +392,61 @@ main .recent-orders a{
     color: var(--color-primary);
 }
 
-.right-section {
+.right-section{
     margin-top: 1.4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
-.right-section .nav {
+.right-section .nav{
     display: flex;
+    justify-content: end;
     gap: 2rem;
-    align-items: center;
 }
 
-.right-section .nav button {
+.right-section .nav button{
     display: none;
 }
 
-.right-section .dark-mode {
+.right-section .dark-mode{
     background-color: var(--color-light);
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 1.6rem;
     width: 4.2rem;
     cursor: pointer;
+    
     border-radius: var(--border-radius-1);
 }
 
-.right-section .dark-mode span {
+.right-section .dark-mode span{
     font-size: 1.2rem;
     width: 50%;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: center;
 }
 
-.right-section .dark-mode span.active {
+.right-section .dark-mode span.active{
     background-color: var(--color-primary);
     color: white;
     border-radius: var(--border-radius-1);
 }
 
-.right-section .nav .profile {
+
+
+.right-section .nav .profile{
     display: flex;
     gap: 2rem;
     text-align: right;
-    align-items: center;
 }
 
-.right-section .nav .profile .profile-photo {
+.right-section .nav .profile .profile-photo{
     width: 2.8rem;
     height: 2.8rem;
     border-radius: 50%;
     overflow: hidden;
 }
-
-/* Rest of your existing styles remain unchanged */
-
 
 .right-section .user-profile{
     display: flex;
