@@ -31,3 +31,23 @@ Orders.forEach(order => {
     tr.innerHTML = trContent;
     document.querySelector('table tbody').appendChild(tr);
 });
+
+// Dashboard.js
+const darkModeToggle = document.querySelector('.dark-mode');
+
+darkModeToggle.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+    updateDarkMode();
+});
+
+function updateDarkMode() {
+    document.body.classList.toggle('dark-mode-variables', isDarkMode);
+    darkModeToggle.querySelector('span:nth-child(1)').classList.toggle('active', isDarkMode);
+    darkModeToggle.querySelector('span:nth-child(2)').classList.toggle('active', isDarkMode);
+}
+
+updateDarkMode(); // Apply dark mode on page load
+
+
+// darkMode.js
+

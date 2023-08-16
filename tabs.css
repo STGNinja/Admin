@@ -56,6 +56,10 @@ body{
     background-color: var(--color-background);
 }
 
+.download{
+font-size: 2rem;
+}
+
 a{
     color: var(--color-dark);
 }
@@ -276,19 +280,19 @@ main .analyse svg circle{
 
 main .analyse .sales svg circle{
     stroke: var(--color-success);
-    stroke-dashoffset: -65;
+    stroke-dashoffset: 30;
     stroke-dasharray: 100;
 }
 
 main .analyse .visits svg circle{
     stroke: var(--color-danger);
-    stroke-dashoffset: -30;
+    stroke-dashoffset: - 30;
     stroke-dasharray: 200;
 }
 
 main .analyse .searches svg circle{
     stroke: var(--color-primary);
-    stroke-dashoffset: -30;
+    stroke-dashoffset: 25;
     stroke-dasharray: 200;
 }
 
