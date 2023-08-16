@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Single Page App Example</title>
+  <script>
+    function loadPage(pageName) {
+      const xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          document.getElementById("content").innerHTML = xhr.responseText;
+        }
+      };
+      xhr.open("GET", pageName + ".html", true);
+      xhr.send();
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <button onclick="loadPage('home')">Home</button>
+    <button onclick="loadPage('about')">About</button>
+    <button onclick="loadPage('services')">Services</button>
+    <button onclick="loadPage('contact')">Contact</button>
+  </div>
+
+  <div id="content">
+    <!-- Initial content or placeholder -->
+  </div>
+</body>
+</html>
