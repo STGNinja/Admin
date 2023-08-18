@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="tabs.css">
@@ -38,15 +39,14 @@ n -->
                 </a>
                 <a href="#" class="active">
                     <span class="material-icons-sharp">
-                        person_outline
-                    </span>
+                        <ion-icon name="musical-notes"></ion-icon>                    </span>
                     <h3>Tabs</h3>
                 </a>
-                <a href="#">
+                <a href="About.html">
                     <span class="material-icons-sharp">
-                        receipt_long
+                        <ion-icon name="information-outline"></ion-icon>
                     </span>
-                    <h3>History</h3>
+                    <h3>About</h3>
                 </a>
                 <a href="#">
                     <span class="material-icons-sharp">
@@ -107,10 +107,26 @@ n -->
 
 <div class="info">
     <h3 id="expandTrigger">Primary Songs <span class="arrow">▼</span></h3>
-  
     <div class="hidden-content">
+        <h1>I Love To See The Temple</h1>
         <audio controls>
             <source src="I Love To See The Temple Audio.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <a href="I Love to See the Temple.gpx" class="download">
+           <br> <ion-icon name="download-outline"></ion-icon>
+            <h2>Download GP File</h2>
+        </a>
+
+        <a href="I Love to See the Temple.pdf" class="download">
+            <ion-icon name="download-outline"></ion-icon>
+            <h2>Download PDF File</h2>
+        </a>
+
+        <h1><br>Gesthemane</h1>
+        <audio controls>
+            <source src="Gethsemane Audio.m4a.wav" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
 
@@ -178,22 +194,22 @@ n -->
 
             <!-- New Users Section -->
             <div class="new-users">
-                <h2>New Users</h2>
+                <h2>Videos</h2>
                 <div class="user-list">
                     <div class="user">
-                        <img src="profile-2.jpg">
-                        <h2>Jack</h2>
-                        <p>54 Min Ago</p>
+                        <img src="temple.jpg">
+                        <h2>I Love To See The Temple</h2>
+                        <p>Youtube</p>
                     </div>
                     <div class="user">
-                        <img src="profile-3.jpg">
-                        <h2>Amir</h2>
-                        <p>3 Hours Ago</p>
+                        <img src="come.jpg">
+                        <h2>Come, Come, Ye Saints</h2>
+                        <p>Youtube</p>
                     </div>
                     <div class="user">
-                        <img src="profile-4.jpg">
-                        <h2>Ember</h2>
-                        <p>6 Hours Ago</p>
+                        <img src="grove.jpg">
+                        <h2>Gesthemane</h2>
+                        <p>Youtube</p>
                     </div>
                     <div class="user">
                         <img src="plus.png">
@@ -254,6 +270,7 @@ n -->
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<sript src="tabs.js"></sript>
 
 
 </body>

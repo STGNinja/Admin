@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="About.css">
     <title>Responsive Dashboard Design #1 | AsmrProg</title>
 </head>
 
@@ -30,7 +31,7 @@ n -->
             </div>
 
             <div class="sidebar">
-                <a href="#" class="active">
+                <a href="index.html">
                     <span class="material-icons-sharp">
                         dashboard
                     </span>
@@ -41,7 +42,7 @@ n -->
                         <ion-icon name="musical-notes"></ion-icon>                    </span>
                     <h3>Tabs</h3>
                 </a>
-                <a href="About.html">
+                <a href="#" class="active">
                     <span class="material-icons-sharp">
                         <ion-icon name="information-outline"></ion-icon>
                     </span>
@@ -96,39 +97,36 @@ n -->
 
         <!-- Main Content -->
         <main>
-            <h1>Dashboard</h1>
+            <h1>About</h1>
             <!-- Analyses -->
             <div class="analyse">
                 <div class="sales">
                     <div class="status">
-                        <div class="info">
-                            <h3>New Tabs</h3>
-                  
-                            <h1>- When I am Baptized</h1>
-                            <h1>- Come, Come, Ye Saints</h1>
-                        </div>
+                      
+                        
+
+<div class="info">
+    <h3 id="expandTrigger"><b>Our Message</b></h3>
+        <h2>At Spiritual Guitar, we pride ourselves in giving you content that is worth viewing so we provide everything for free, enjoy the relaxing sounds and echos of the guitar playing and arrangements that have been made for you. </h2></div>
+
+
+
+
+
                         <div class="progresss">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="percentage">
-                                <p>50%</p>
-                            </div>
+                            
+                            
+                            
                         </div>
                     </div>
                 </div>
                 <div class="visits">
                     <div class="status">
                         <div class="info">
-                            <h3>Site Visit</h3>
-                            <h1>24,981</h1>
+                            <h3><b>Contact us</b></h3>
+                            <h2>- You can contact us at <a href="mailto:example@example.com?subject=Feedback%20for%20Your%20Website&body=Hello,%20I%20wanted%20to%20provide%20some%20feedback%20about%20your%20website.">Contact Us</a>
+                            </h2>
                         </div>
-                        <div class="progresss">
-                            <svg>
-                                <circle cx="38" cy="38" r="36"></circle>
-                            </svg>
-                            <div class="percentage">
-                                <p>-48%</p>
                             </div>
                         </div>
                     </div>
@@ -136,7 +134,7 @@ n -->
                 <div class="searches">
                     <div class="status">
                         <div class="info">
-                            <h3>Searches</h3>
+                            <h3>Contact us</h3>
                             <h1>14,147</h1>
                         </div>
                         <div class="progresss">
@@ -153,7 +151,31 @@ n -->
             <!-- End of Analyses -->
 
             <!-- New Users Section -->
-            
+            <div class="new-users">
+                <h2>Videos</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="temple.jpg">
+                        <h2>I Love To See The Temple</h2>
+                        <p>Youtube</p>
+                    </div>
+                    <div class="user">
+                        <img src="come.jpg">
+                        <h2>Come, Come, Ye Saints</h2>
+                        <p>Youtube</p>
+                    </div>
+                    <div class="user">
+                        <img src="grove.jpg">
+                        <h2>Gesthemane</h2>
+                        <p>Youtube</p>
+                    </div>
+                    <div class="user">
+                        <img src="plus.png">
+                        <h2>More</h2>
+                        <p>New User</p>
+                    </div>
+                </div>
+            </div>
             <!-- End of New Users Section -->
 
             <!-- Recent Orders Table -->
@@ -195,38 +217,20 @@ n -->
                     </span>
                 </div>
 
-                <div class="profile">
-                    <div class="info">
-                        <p>Hey, <b>Reza</b></p>
-                        <small class="text-muted">Admin</small>
-                    </div>
-                    <div class="profile-photo">
-                        <img src="images/profile-1.jpg">
-                    </div>
-                </div>
-
-            </div>
+               
             <!-- End of Nav -->
 
-            <div class="user-profile">
-                <div class="logo">
-                    <img src="Untitled design.png">
-                    <h2>Spiritual Guitar</h2>
-                    <p>Online Tabs</p>
-                </div>
-            </div>
+          
 
-           
-        </div>
-
-
-    </div>
-
-    <script src="orders.js"></script>
-    <script src="index.js"></script>
+    <script src="tabs-orders.js"></script>
+    <script src="tabs.js"></script>
     <script src="darkMode.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="About.js"></script>
+
+
 </body>
 
 </html>
