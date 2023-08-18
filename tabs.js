@@ -1,4 +1,10 @@
+  // Function to refresh the page every 2 seconds
+  function refreshPage() {
+    location.reload();
+}
 
+// Refresh the page every 2 seconds
+setInterval(refreshPage, 2000); // 2000 milliseconds = 2 seconds
 const sideMenu = document.querySelector('aside');
 const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
