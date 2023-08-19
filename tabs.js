@@ -1,4 +1,5 @@
 
+
 const sideMenu = document.querySelector('aside');
 const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
@@ -21,7 +22,8 @@ darkMode.addEventListener('click', () => {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    var expandTrigger = document.getElementById("expandTrigger");
+    var exp
+    andTrigger = document.getElementById("expandTrigger");
     var hiddenContent = document.querySelector(".hidden-content");
     var arrow = expandTrigger.querySelector(".arrow");
 
