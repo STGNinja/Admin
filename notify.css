@@ -1,0 +1,113 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+
+.x {
+    cursor:pointer;
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+
+
+.news {
+    cursor: pointer;
+    font-size: 2.5rem;
+    text-align: left;
+}
+.notification {
+    background-color: rgb(0, 0, 0, 0.5);
+    border: 1px solid #ccc;
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust width as needed */
+    text-align: left;
+    
+    backdrop-filter: blur(8px); /* Background blur */
+    z-index: 1; /* Place notification above other content */
+    position: fixed;
+    top: -100%; /* Initially off-screen */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slideDown 1s ease-in-out forwards; /* Animation name, duration, easing */
+}
+
+/* Keyframes for slide down animation */
+@keyframes slideDown {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 1%;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        top: 1%;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+.notification p {
+    font-size: 16px;
+    margin: 0;
+    padding: 5px;
+    color: white;
+}
+
+.notification a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.notification a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styles for page layout */
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subheader {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Styles for the refresh button */
+.refresh-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.refresh-button:hover {
+    background-color: #0056b3;
+}
