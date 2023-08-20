@@ -72,13 +72,13 @@ body {
         top: -100%;
     }
     100% {
-        top: 1%;
+        top: 50%;
     }
 }
 
 @keyframes slideUp {
     0% {
-        top: 1%;
+        top: 50%;
     }
     100% {
         top: -100%;
